@@ -23,3 +23,11 @@ A <|-- B
 A <|-- C
 C <|-- A: This should not exist
 ```
+
+```diff
+- import classC
+- class A(classC.C):
++ class A(object):
+    def A(self):
+        ...
+```
